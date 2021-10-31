@@ -30,14 +30,25 @@ function renderWeather(weatherObj) {
     forecastEl.appendChild(name)
     forecastEl.appendChild(country)
 
-    
+    //icon
+    var icon = document.createElement('img')
+    icon.src = 'https://openweathermap.org/img/wn/' + weatherObj.weather[0].icon + '@2x.png'
+    icon.alt = weatherObj.description
+    forecastEl.appendChild(icon)
+
+    //weather description
+    var description = document.createElement('p')
+    description.textContent = "Description: " + weatherObj.weather[0].description
+    forecastEl.appendChild(description)
+
     //temperature
     var temp = document.createElement('p')
     temp.textContent = "Current: " + weatherObj.main.temp + "℉"
     forecastEl.appendChild(temp)
 
+    //feels like
     var feels_like = document.createElement('p')
     feels_like.textContent = "Feels like: " + weatherObj.main.feels_like + "℉"
-    forecastEl.appendChild(feels_like)
+    forecastEl.appendChild(feels_like) 
 }
 
