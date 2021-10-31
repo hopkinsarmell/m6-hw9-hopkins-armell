@@ -1,4 +1,6 @@
-var btn = document.querySelector('button')
+//get form, input, and #forecast references
+var formEl = document.querySelector('form')
+var inputEl = document.querySelector('input')
 var forecastEl = document.getElementById('forecast')
 
 
