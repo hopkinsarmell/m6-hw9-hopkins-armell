@@ -9,30 +9,34 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 }
 
 body {
-	background: lightblue;
+	background: #d9edf3;
 	margin: 0 auto;
+	font-family: poppins, sans-serif;
+	font-weight: 500;
+	font-style: normal;
 }
 
 p { 
 	margin: 3px 0;
 	font-size: 1.2rem;
+	color: #3c839b;
 }
 
 h1 {
     margin: 100px auto 20px;
     text-align: center;
-    color: #346372;
+    color: #4089a1;
 	font-size: 3rem;
 }
 
 h2 {
 	text-align: center;
-	color: #346372;
-	font-size: 2rem;
+	color: #3d778b;
+	font-size: 1.9rem;
 }
 
 .footerh3 {
-    color: #346372;
+    color: #3d778b;
     font-size: 1.4rem;
 	font-style: italic;
 	text-align: center;
@@ -50,6 +54,8 @@ main.container {
 
 form {
 	margin-top: 22px;
+	display: flex;
+	flex-direction: column;
 }
 
 label {
@@ -76,17 +82,17 @@ button {
     border: 0.4px solid #add8e6;
 }
 
+button:hover {
+    background: #355360;
+	width: 190px;
+}
+
 footer {
     padding: 99px 0;
 }
 
 
 @media (min-width: 344px) {
-	form {
-		margin-top: 22px;
-		display: flex;
-		flex-direction: column;
-	}
 
 	input#weather-search {
 		margin: 0px 2px 15px 2px;
