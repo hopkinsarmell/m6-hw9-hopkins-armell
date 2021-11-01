@@ -10,7 +10,6 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
 body {
 	background: lightblue;
-	max-width: 800px;
 	margin: 0 auto;
 }
 
@@ -32,11 +31,19 @@ h2 {
 	font-size: 2rem;
 }
 
+.footerh3 {
+    text-align: center;
+    color: #346372;
+    font-size: 1.6rem;
+	font-style: italic;
+}
+
 main.container {
     display: flex;
     flex-direction: column;
     align-items: center;	
 	text-align: center;
+	margin-bottom: 150px;
 }
 
 form {
@@ -65,6 +72,10 @@ button {
     font-size: 1.1rem;
     box-shadow: 3px 5px 7px 0px #567b7c99;
     border: 0.4px solid #add8e6;
+}
+
+footer {
+    padding: 99px 0;
 }
 
 
