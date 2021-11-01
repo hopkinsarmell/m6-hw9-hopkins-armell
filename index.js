@@ -8,7 +8,7 @@ var forecastEl = document.getElementById('forecast')
 //return data in json format
 formEl.onsubmit = function(e) {
     e.preventDefault()
-    var query = inputEl.value
+    var query = inputEl.value.trim()
     //console.log(query)
     fetch('https://api.openweathermap.org/data/2.5/weather?q='+query+'&units=imperial&sys.country&appid=00f5bbd24e7c673c1cf820cd3c75f578')
     .then(function(res) {
@@ -17,7 +17,12 @@ formEl.onsubmit = function(e) {
     .then(function(result) {
     renderWeather(result)
     })
+    .catch(function(err) {
+        console.log(err)
+    })
 }
+
+
 
 function renderWeather(weatherObj) {
     //console.log(weatherObj.name)
