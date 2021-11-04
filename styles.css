@@ -16,6 +16,11 @@ body {
 	font-style: normal;
 }
 
+header {
+	width: 94%;
+	margin: 0 auto;
+}
+
 p { 
 	margin: 3px 0;
 	font-size: 1.2rem;
@@ -50,6 +55,7 @@ main.container {
     text-align: center;
     margin-bottom: 150px;
     max-width: 800px;
+	width: 94%;
 }
 
 form {
@@ -91,6 +97,8 @@ button:hover {
 
 footer {
     padding: 99px 0;
+	width: 94%;
+	margin: 0 auto;
 }
 
 
